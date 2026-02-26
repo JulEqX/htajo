@@ -1,6 +1,6 @@
 .envelope-container {
-    --envelope-width: 458px;
-    --envelope-height: 324px;
+    --envelope-width: min(458px, 85vw);
+    --envelope-height: calc(var(--envelope-width) * 0.708);
 
     position: relative;
     width: var(--envelope-width);
@@ -38,8 +38,8 @@
 
 .envelope-seal {
     position: absolute;
-    width: 125px;
-    height: 125px;
+    width: min(125px, 27vw);
+    height: min(125px, 27vw);
     max-width: 100%;
     max-height: 100%;
     top: 50%;
@@ -62,7 +62,7 @@
     left: 0;
     right: 0;
 
-    height: 300px;
+    height: calc(var(--envelope-height) * 0.926);
     max-height: 100%;
     max-width: 100%;
     background-color: #eee7d7;

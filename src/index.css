@@ -29,8 +29,10 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -104,4 +106,12 @@ button:focus-visible {
   border: 2px solid #e8d5c4;
   overflow: hidden;
   box-shadow: 5px 5px 20px #161616;
+}
+
+@media (max-width: 480px) {
+  .overlay {
+    max-width: 90vw;
+    max-height: 70vh;
+    border-radius: 8px;
+  }
 }
